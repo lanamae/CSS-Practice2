@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            width: 100%;
+            height: 100vh;
+            background: gray;
+
+            /* layout */
+            display: flex;
+            flex-direction: column; /* ROW is th default flex-direction of display-flex*/
+            flex-wrap: nowrap; /*nowrap is the default flex wrap of display flex*/
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="box1">BOX 1</div>
+        <div class="box2">BOX 2</div>
+        <div class="box3">BOX 3</div>
+        <div class="box4">BOX 4</div>
+    </div>
+
+</body>
+</html>
