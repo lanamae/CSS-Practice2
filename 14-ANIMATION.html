@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            width: 100%;
+            height: 100vh;
+            
+            /* layout */
+            display: grid;
+            place-items: center;
+
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+
+            animation-name: box_animation;
+            animation-duration: 10s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+        }
+
+
+        /* ANIMATION */
+        @keyframes box_animation{
+            0%{
+                background: red;
+                width: 50px;
+                height: 50px;
+            }
+
+
+            10%{
+                background: orange;
+                width: 100px;
+                height: 100px;
+            }
+
+            20%{
+                background: yellow;
+                width: 200px;
+                height: 200px;
+            }
+
+            30%{
+                background: green;
+                width: 300px;
+                height: 300px;
+            }
+
+            40%{
+                background: blue;
+                width: 400px;
+                height: 400px;
+            }
+
+            50%{
+                background: indigo;
+                width: 500px;
+                height: 500px;
+            }
+
+            60%{
+                background: violet;
+                width: 600px;
+                height: 600px;
+            }
+
+            70%{
+                background: brown;
+                width: 700px;
+                height: 700px;
+            }
+
+            80%{
+                background: black;
+                width: 800px;
+                height: 800px;
+            }
+
+            90%{
+                background: white;
+                width: 900px;
+                height: 900px;
+                border: 2px solid gray;
+            }
+
+            100%{
+                background: gray;
+                width: 1000px;
+                height: 1000px;
+            }
+
+          
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
