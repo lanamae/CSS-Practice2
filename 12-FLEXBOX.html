@@ -19,32 +19,67 @@
 
             /* layout */
             display: flex;
-            flex-direction: column; /* ROW is th default flex-direction of display-flex*/
-            flex-wrap: nowrap; /*nowrap is the default flex wrap of display flex*/
+            /* flex-direction: row;  */
+            /* ROW is the default flex-direction of display-flex*/
+
+            /* flex-wrap: nowrap;  */
+            /*nowrap is the default flex wrap of display flex*/
+
+            /* flex-flow: row wrap; */
+            /* flex flow is the simply combination of flex-direction & flex-wrap */
+
+            /* justify-content: space-between;
+            align-items: center; */
         }
 
         .box1{
             width: 100px;
             height: 100px;
             background: red;
+
+            /* order: 3; */
+            /* flex-grow: 1;
+            flex-shrink: 2; */
+            /* flex-basis: 150px; */
+            flex: 1 2;
         }
 
         .box2{
             width: 100px;
             height: 100px;
             background: blue;
+            
+            /* order: 2; */
+            /* flex-grow: 1;
+            flex-shrink: 1; */
+            /* flex-basis: 150px; */
+            flex: 1 1;
         }
 
         .box3{
             width: 100px;
             height: 100px;
             background: yellow;
+            
+            /* order: 0; */
+            /* flex-grow: 1;
+            flex-shrink: 1; */
+            flex-basis: 150px;
+            flex: 1 1;
+
+
         }
 
         .box4{
             width: 100px;
             height: 100px;
             background: green;
+
+            /* order: 1; */
+            /* flex-grow: 1;
+            flex-shrink: 0; */
+            /* flex-basis: 150px; */
+            flex: 2 0;
         }
 
 
@@ -59,6 +94,8 @@
         <div class="box2">BOX 2</div>
         <div class="box3">BOX 3</div>
         <div class="box4">BOX 4</div>
+
+        
     </div>
 
 </body>
